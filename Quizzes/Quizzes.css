@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background-color: #000000;
+    color: white;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-decoration-style: none;
+    text-decoration-color: white;
+    font-size: 60px;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+  
+  .container{
+    top: 25px;
+    margin-left: auto;
+    margin-right: auto;    
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+  }
+  
+  .container .card{
+    position: relative;
+  }
+
+  .card7{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .container .card .face{
+    width:300px;
+    height: 200px;
+    transition:.4s;
+  }
+  
+  .container .card .face.face1{
+    position: relative;
+    background: rgb(49, 31, 148);
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+  }
+  
+  .container .card:hover .face.face1{
+    transform: translateY(0);
+    box-shadow:
+      inset 0 0 30px whitesmoke,
+      inset 10px 0 40px #f0f,
+      inset -10px 0 40px #0ff,
+      inset 10px 0 300px #f0f,
+      inset -10px 0 300px #0ff,
+      0 0 25px #fff,
+      -10px 0 40px #f0f,
+      10px 0 40px #0ff;
+     
+  }
+  
+  
+  .container .card .face.face1 .content h3{
+    opacity: 1;
+    transition:  0.5s;
+    text-align: center;
+    color: white;
+  }
+  
+  .container .card:hover .face.face1 .content h3{
+    opacity: 1;
+    color: black;
+   
+  }
+  
+  
+  .container .card .face.face1 .content h3{
+    font-size: 40px;
+    text-align: center;
+    
+  
+  }
+  
+  .container .card .face.face1 .content a{
+     transition: .5s;
+  }
+  
+  .container .card .face.face2{
+     position: relative;
+     background: whitesmoke;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,.8);
+    transform: translateY(-100px);
+  }
+  
+  .container .card:hover .face.face2{
+      transform: translateY(0);
+  
+  
+  }
+  
+  .container .card .face.face2 .content p, a{
+    font-size: 18px;
+    margin: 0 ;
+    padding: 0;
+    color:black;
+  }
+  
+  .container .card .face.face2 .content a{
+    background-color: #1E1985; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: crosshair;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    padding: 10px;
+    margin: 15px 0 0;
+  }
+  
+  .container .card .face.face2 .content a:hover{
+    background: #333 ;
+    color: white; 
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+  }
+  
