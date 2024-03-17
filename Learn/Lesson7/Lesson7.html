@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 7</title>
+    <link rel="stylesheet" type="text/css" href="Lesson7.css">
+    <link rel="stylesheet" type="text/css" href="../../Nav/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="../../Landing/index.html" class="logo">LPD Python</a>
+    <div class="navbar-left">
+      <a href="../../Learn/Learn.html">Learn</a>
+      <a href="../../Practice/Practice.html">Practice</a>
+      <a href="../../Quizzes/Quizzes.html">Quizzes</a>
+      <a href="../../Games/Games.html">Games</a>
+    </div>
+    <div class="navbar-right">
+        <a href="../../About/About.html">About</a>
+    </div> 
+</div>
+
+    <div class="welcome">
+      Lesson 7 - Functions<br><br> 
+    </div>
+    <div class="position">
+      <div class="objective-title"> 
+        Lesson Objective
+      </div>
+      <div class="lesson-objective">
+        In this lesson you will learn:<br><br>
+        <ul>
+          <li>What functions are</li>
+          <li>How to use functions</li>
+        </ul>  
+      </div>
+      <div class="index-title">
+        On this page<hr>
+        <div class="index-contents">
+          <a href="#section-title-functions">What are functions?</a><br><br><a href="#section-title-arguments">Arguments and how to use them</a><br><br> 
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">
+        <h2 id="section-title-functions">What are functions?</h2>
+    </div>
+      <div class="section-contents">
+        <div class="section-summary">
+            A function is a block of code which only runs when it is called.
+            <br>
+        </div>
+        <div class="example-1">
+          <div class="example-2-title">
+            Creating Functions
+          </div>
+          <br>
+          In Python a function is defined using the def keyword:<br><br>
+
+          <div class="code-box">          
+            <span style="color: rgb(0, 93, 164)">def</span> myFirstFunction():<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: green">"Hello there!"</span>)<br> 
+            <span style="color: green">#This will not print anything because we now need to call the function in order to execute it</span><br>   
+          </div>
+          <br>
+          <div class="example-2-title">
+            Calling functions: <br><br>
+          </div>
+          <ul>
+            <li>By calling a function we are executing its code</li>
+            <li>We simply need to type the functions name followed by "()"</li><br>
+          </ul>
+          <div class="code-box">          
+            <span style="color: rgb(0, 93, 164)">def</span> myFirstFunction():<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: green">"Hello there!"</span>)<br><br>
+            myFirstFunction()<br>
+            <span style="color: green">#This will print "Hello there!" as it has now been executed</span><br>   
+          </div>
+          <br>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2 id="section-title-arguments">Arguments and how to use them</h2>
+    </div>
+      <div class="section-contents">
+        <div class="section-summary">
+            Information can be placed into functions as arguments. 
+            <br>
+        </div>
+        <div class="example-1">
+          <div class="example-2-title">
+            What are arguments?
+          </div>
+          <br>
+          Arguments are specified inside the (). You can add as many arguments as you want, just separate them with a comma.<br><br>
+          <div class="code-box">          
+            <span style="color: rgb(0, 93, 164)">def</span> myFirstFunction(firstName):<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(firstName + <span style="color: rgb(164, 101, 0)">"Smith"</span>)<br><br>
+            myFirstFunction(<span style="color: rgb(164, 101, 0)">"James"</span>)<br>
+            myFirstFunction(<span style="color: rgb(164, 101, 0)">"Ricky"</span>)<br>
+            <span style="color: green">#This will print James Smith and Ricky Smith</span><br>   
+            <span style="color: green">#When we call the function we can enter a name and it will output that name plus what we wrote in the function</span><br>   
+          </div>
+          <br>
+          <div class="example-2-title">
+            Number of Arguments: <br><br>
+          </div>
+          <ul>
+            <li>A function must be called with the correct number of arguments.</li>
+            <li>If a function has 2 arguments, you must call the function with 2 arguments used.</li>
+            <li>The number of arguments must match.</li><br>
+          </ul>
+          <div class="code-box">          
+            <span style="color: rgb(0, 93, 164)">def</span> myFirstFunction(firstName, lastName):<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(firstName + <span style="color: rgb(164, 101, 0)">" "</span> + lastName)<br>
+            <span style="color: green">#The " " allows us to put a space between the names, otherwise they print as one word </span><br><br>
+            myFirstFunction(<span style="color: rgb(164, 101, 0)">"James", "Smith"</span>)<br>
+            myFirstFunction(<span style="color: rgb(164, 101, 0)">"Donald", "Jackson"</span>)<br>
+            <span style="color: green">#They will print "James Smith" and "Donald Jackson" as it has now been called</span><br>   
+          </div>
+          <br>
+          <div class="example-2-title">
+            Arbitrary Arguments: <br><br>
+          </div>
+          <ul>
+            <li>If you don't know how many arguments there will be, then put (*x).</li>
+            <li>x represents a random parameter name here.</li><br>
+          </ul>
+          <div class="code-box">          
+            <span style="color: rgb(0, 93, 164)">def</span> myFirstFunction(*cars):<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: green">"My favourite car company is "</span> + cars[<span style="color: red">2</span>])<br><br>
+            myFirstFunction(<span style="color: rgb(164, 101, 0)">"Ford", "Volkswagen", "Toyota"</span>)<br> 
+            <span style="color: green">#This will print Toyota as the favourite car company as it at position of Index 2</span><br>   
+          </div>
+          <br>
+          <div class="example-2-title">
+            Keyword Arguments: <br><br>
+          </div>
+          <ul>
+            <li>You can also use arguments with the key = value syntax.</li>
+            <li>This way the order of the arguments does not matter.</li><br>
+          </ul>
+          <div class="code-box">          
+            <span style="color: rgb(0, 93, 164)">def</span> myFirstFunction(dog1, dog2, dog3):<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: green">"The best dog breed is "</span> + dog2)<br><br>
+            myFirstFunction(dog1 =<span style="color: rgb(164, 101, 0)">"Patterdale"</span>, dog2 = <span style="color: rgb(164, 101, 0)">"Greyhound"</span>, dog3 = <span style="color: rgb(164, 101, 0)">"Pitbull"</span>)<br> 
+            <span style="color: green">#This prints "Greyhound" as the best dog breed</span><br>   
+          </div>
+        </div>
+    </div>
+</body>
+</html>

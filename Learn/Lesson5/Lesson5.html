@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5</title>
+    <link rel="stylesheet" type="text/css" href="Lesson5.css">
+    <link rel="stylesheet" type="text/css" href="../../Nav/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="../../Landing/index.html" class="logo">LPD Python</a>
+    <div class="navbar-left">
+      <a href="../../Learn/Learn.html">Learn</a>
+      <a href="../../Practice/Practice.html">Practice</a>
+      <a href="../../Quizzes/Quizzes.html">Quizzes</a>
+      <a href="../../Games/Games.html">Games</a>
+    </div>
+    <div class="navbar-right">
+        <a href="../../About/About.html">About</a>
+    </div> 
+</div>
+
+    <div class="welcome">
+      Lesson 5 - If and Else Statements<br><br> 
+    </div>
+    <div class="position">
+      <div class="objective-title"> 
+        Lesson Objective
+      </div>
+      <div class="lesson-objective">
+        In this lesson you will learn:<br><br>
+        <ul>
+          <li>What if, elif, and else statements are</li>
+          <li>How to use the statements</li>
+        </ul>  
+      </div>
+      <div class="index-title">
+        On this page<hr>
+        <div class="index-contents">
+          <a href="#section-title-if">What are if statements?</a><br><br><a href="#section-title-if-elif">Elif statements</a><br><br><a href="#section-title-if-elif-else">Else statements</a><br><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">
+      <h2 id="section-title-if">What are if statements?</h2>
+    </div>
+    <div class="section-contents">
+      <div class="section-summary">
+        The if statement executes a block of code if a specified condition is true. 
+        <br>
+      </div>
+      <div class="example-1">
+        <div class="example-2-title">
+          If Statements
+        </div>
+        <br>
+        Here we will see a basic example of an if statment: <br><br>
+        <div class="code-box">          
+          x =<span style="color: red"> 30</span><br>
+          y =<span style="color: red"> 15</span><br>
+          <span style="color: rgb(0, 93, 164)">if</span> x > y:<br>
+          <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: rgb(164, 101, 0)">"x is bigger than y"</span>)<br>
+          <span style="color: green">#You must make sure to indent the line after the if statement</span><br>
+          <span style="color: green">#This can be done by clicking the tab button when you are coding</span><br>
+        </div>
+        <br>
+        Here is another example: <br><br>
+        <div class="code-box">          
+            x =<span style="color: red"> 55</span><br>
+            y =<span style="color: red"> 67</span><br>
+            <span style="color: rgb(0, 93, 164)">if</span> x <= y:<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: rgb(164, 101, 0)">"x is smaller or equal to y"</span>)<br>
+            <span style="color: green">#Once again, remember to indent the print statement</span><br>
+        </div>
+        <br>
+        One last example:<br><br>
+        <div class="code-box">          
+            x =<span style="color: red"> 20</span><br>
+            y =<span style="color: red"> 20</span><br>
+            <span style="color: rgb(0, 93, 164)">if</span> x == y:<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: rgb(164, 101, 0)">"x is equal to y"</span>)<br>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">
+        <h2 id="section-title-if-elif">Elif statements</h2>
+      </div>
+      <div class="section-contents">
+        <div class="section-summary">
+          The elif keyword is a way of executing a different condition if previous conditions were false.
+          <br>
+        </div>
+        <div class="example-1">
+          <div class="example-2-title">
+            Elif Statements
+          </div>
+          <br>
+          Here we will see a basic example of an elif statment: <br><br>
+          <div class="code-box">          
+            x =<span style="color: red"> 30</span><br>
+            y =<span style="color: red"> 30</span><br>
+            <span style="color: rgb(0, 93, 164)">if</span> x > y:<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: rgb(164, 101, 0)">"x is bigger than y"</span>)<br>
+            <span style="color: rgb(0, 93, 164)">elif</span> x == y:<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: rgb(164, 101, 0)">"x is equal to y"</span>)<br>
+          </div>
+          <br>
+          Here is another example: <br><br>
+          <div class="code-box">          
+            y =<span style="color: red"> 30</span><br>
+            <span style="color: rgb(0, 93, 164)">if</span> y > 15:<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: rgb(164, 101, 0)">"y is bigger"</span>)<br>
+            <span style="color: rgb(0, 93, 164)">elif</span> y < 15:<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: rgb(164, 101, 0)">"y is less than 15"</span>)<br>
+            <span style="color: rgb(0, 93, 164)">elif</span> y == 15:<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: rgb(164, 101, 0)">"y is equal to 15"</span>)<br>
+          </div>
+          <br>
+        </div>
+      </div>
+
+      <div class="section-title">
+        <h2 id="section-title-if-elif-else">Else statements</h2>
+      </div>
+      <div class="section-contents">
+        <div class="section-summary">
+            The if/else statement executes a block of code if a specified condition is true. If the condition is false, another block of code can be executed.
+            <br>
+        </div>
+        <div class="example-1">
+          <div class="example-2-title">
+            Else Statements
+          </div>
+          <br>
+          Here we will see a basic example of an else statment: <br><br>
+          <div class="code-box">          
+            x =<span style="color: red"> 1000</span><br>
+            y =<span style="color: red"> 250</span><br>
+            <span style="color: rgb(0, 93, 164)">if</span> y > x:<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: rgb(164, 101, 0)">"y is bigger than x"</span>)<br>
+            <span style="color: rgb(0, 93, 164)">elif</span> x == y:<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: rgb(164, 101, 0)">"x is equal to y"</span>)<br>
+            <span style="color: rgb(0, 93, 164)">else:</span><br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: rgb(164, 101, 0)">"x is bigger than y"</span>)<br>
+          </div>
+          <br>
+          Here is another example: <br><br>
+          <div class="code-box">          
+            y =<span style="color: red"> 30</span><br>
+            <span style="color: rgb(0, 93, 164)">if</span> y > 15:<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: rgb(164, 101, 0)">"y is bigger"</span>)<br>
+            <span style="color: rgb(0, 93, 164)">elif</span> y < 15:<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: rgb(164, 101, 0)">"y is less than 15"</span>)<br>
+            <span style="color: rgb(0, 93, 164)">elif</span> y == 15:<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: rgb(164, 101, 0)">"y is equal to 15"</span>)<br>
+          </div>
+          <br>
+        </div>
+      </div>
+</body>
+</html>

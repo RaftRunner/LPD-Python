@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2</title>
+    <link rel="stylesheet" type="text/css" href="Lesson2.css">
+    <link rel="stylesheet" type="text/css" href="../../Nav/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="../../Landing/index.html" class="logo">LPD Python</a>
+    <div class="navbar-left">
+      <a href="../../Learn/Learn.html">Learn</a>
+      <a href="../../Practice/Practice.html">Practice</a>
+      <a href="../../Quizzes/Quizzes.html">Quizzes</a>
+      <a href="../../Games/Games.html">Games</a>
+    </div>
+    <div class="navbar-right">
+        <a href="../../About/About.html">About</a>
+    </div> 
+</div>
+
+    <div class="welcome">
+      Lesson 2 - Variables<br><br> 
+    </div>
+    <div class="position">
+      <div class="objective-title"> 
+        Lesson Objective
+      </div>
+      <div class="lesson-objective">
+        In this lesson you will learn:<br><br>
+        <ul>
+          <li>What a varaible is</li>
+          <li>How to create variables</li>
+          <li>How to use variables</li>
+        </ul>  
+      </div>
+      <div class="index-title">
+        On this page<hr>
+        <div class="index-contents">
+          <a href="#section-title-variable">What is a variable?</a><br><br><a href="#section-title-create">How to create variables</a><br><br><a href="#section-title-use">How to use a variable</a><br><br> 
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">
+      <h2 id="section-title-variable">What is a variable?</h2>
+    </div>
+    <div class="section-contents">
+      <div class="section-summary">
+        A variable is a container for storing a value of data<br>
+      </div>
+      <div class="example-1">
+        <div class="example-2-title">
+          What are the main variable types? 
+        </div>
+        <br>
+        1. String - Used to represent text rather than just numbers. <br><br>
+        <div class="code-box">          
+          x = <span style="color: green">"Hello World!"</span><br>
+          userName = <span style="color: green">"Number 1 Rick"</span><br>
+        </div>
+        <br>
+        2. Integer - A whole number that can be stored in a variable. <br><br>
+        <div class="code-box">          
+          x = <span style="color: rgb(164, 101, 0)">3</span><br>
+          y = <span style="color: rgb(164, 101, 0)">15</span><br>
+        </div>
+        <br>
+        3. Float - A decimal number. It will always end in a decimal. <br><br>
+        <div class="code-box">          
+          x = <span style="color: rgb(164, 101, 0)">3.0</span><br>
+          y = <span style="color: rgb(164, 101, 0)">15.3</span><br>
+        </div>
+        <br>
+        4. Boolean - Allows you determine whether something is true or false. <br><br>
+        <div class="code-box">          
+          x = <span style="color: rgb(0, 93, 164)">3</span><br>
+          <span style="color: rgb(0, 93, 164)">print</span>(x > 2) <span style="color: green">#Prints True</span><br>
+          <span style="color: rgb(0, 93, 164)">print</span>(x == 3)<span style="color: green">#Prints True</span><br>
+          <span style="color: rgb(0, 93, 164)">print</span>(x < 2)<span style="color: green">#Prints False</span><br>
+        </div>
+        <br>
+      </div>
+    </div>
+
+    <div class="section-title-2">
+      <h2 id="section-title-create">How to create variables</h2>
+    </div>
+    <div class="section-contents">
+      <div class="section-summary">
+        A variable is created when you assign it a value. We can call a variable anything as long as it follows the rules.
+      </div>
+      <div class="example-2">
+        <div class="example-2-title">
+          Variable names
+        </div><br>
+          Legal names:<br><br>
+        <div class="code-box">
+          myname = (<span style="color: green">"Ricky"</span>)<br>
+          myName = (<span style="color: green">"Ricky"</span>)<br>
+          Myname = (<span style="color: green">"Ricky"</span>)<br>
+          MyName = (<span style="color: green">"Ricky"</span>)<br>
+          my_name = (<span style="color: green">"Ricky"</span>)<br>
+          _my_name = (<span style="color: green">"Ricky"</span>)<br>
+          MYNAME = (<span style="color: green">"Ricky"</span>)<br>
+          myname1 = (<span style="color: green">"Ricky"</span>)<br>
+        </div>
+        <br><br>
+        Illegal names:<br><br>
+        <div class="code-box">
+          1myname = (<span style="color: green">"Ricky"</span>)<br>
+          my-name = (<span style="color: green">"Ricky"</span>)<br>
+          my name = (<span style="color: green">"Ricky"</span>)<br>
+        </div>
+      </div>
+      <div class="example-2">
+        <div class="example-2-title">
+          Multiple Word Variable Names
+        </div><br> 
+        To make variable names with more than one word readable, you can use the following techniques:<br><br>
+        Camel Case:<br><br>
+        <div class="code-box">
+          <span style="color: green">#Every word except the first is capitalised</span><br>
+          myFirstName = (<span style="color: green">"Ricky"</span>)<br>
+        </div>
+        <br>
+        Pascal Case:<br><br>
+        <div class="code-box">
+          <span style="color: green">#Every word is capitalised</span><br>
+          MyFirstName = (<span style="color: green">"Ricky"</span>)<br>
+        </div>
+        <br>
+        Snake Case:<br><br>
+        <div class="code-box">
+          <span style="color: green">#Every word is seperated by an underscore</span><br>
+          my_first_name = (<span style="color: green">"Ricky"</span>)<br>
+        </div>
+      </div>
+      <div class="example-2">
+        <div class="example-2-title">
+          Overriding a variable
+        </div><br>
+        Variables can even change type after they have been set.
+        <br><br>
+        <div class="code-box">
+          x = 5 <span style="color: green">#Here x is of type int</span><br>
+          x = <span style="color: green">"I like apples."</span> 
+          <span style="color: green">#Now it is of type str</span><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title-3">
+      <h2 id="section-title-use">How to use a variable</h2>
+    </div>
+    <div class="section-contents">
+      <div class="section-summary">
+        To use a variable you must declare it and assign a value for which it will be used for. <br><br>
+      </div>
+      <div class="example-3">
+        <div class="example-3-title">How can variables be used?</div><br>
+        Variables can be used to:<br><br>
+        <ul>
+          <li>Store information</li>
+          <li>Be referenced and used in a program</li>
+          <li>Label data with useful names, so programs can be better understood by everyone</li>
+        </ul>  
+      </div>
+      <div class="example-3">
+        <div class="example-3-title">One value can have multiple variables</div>
+        <br>And you can assign the same value to multiple variables in one line:<br><br>
+        <div class="code-box">
+          x, y, z =
+          <span style="color: green">"Yes"</span><br>
+        </div>
+      </div>
+      <div class="example-3">
+        <div class="example-3-title">Outputting a variable</div>
+        <br>You can output a variable using the print function:<br><br>
+        <div class="code-box">
+          x = 5<br>
+          <span style="color: rgb(0, 93, 164)">print</span>(x) 
+          <span style="color: green">#This will print 5 </span><br><br>
+          myFirstName = <span style="color: green">"Ricky"</span><br>
+          myLastName = <span style="color: green">"Johnson"</span><br>
+          <span style="color: rgb(0, 93, 164)">print</span>(<span style="color: green">"My name is: "</span> + myFirstName + <span style="color: green">" "</span> + myLastName)<br>
+          <span style="color: green">#This will print 'My name is: Ricky Johnson'</span><br><br>
+        </div>
+      </div>
+</body>
+</html>

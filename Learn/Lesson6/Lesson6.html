@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6</title>
+    <link rel="stylesheet" type="text/css" href="Lesson6.css">
+    <link rel="stylesheet" type="text/css" href="../../Nav/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="../../Landing/index.html" class="logo">LPD Python</a>
+    <div class="navbar-left">
+      <a href="../../Learn/Learn.html">Learn</a>
+      <a href="../../Practice/Practice.html">Practice</a>
+      <a href="../../Quizzes/Quizzes.html">Quizzes</a>
+      <a href="../../Games/Games.html">Games</a>
+    </div>
+    <div class="navbar-right">
+        <a href="../../About/About.html">About</a>
+    </div> 
+</div>
+
+    <div class="welcome">
+      Lesson 6 - Loops<br><br> 
+    </div>
+    <div class="position">
+      <div class="objective-title"> 
+        Lesson Objective
+      </div>
+      <div class="lesson-objective">
+        In this lesson you will learn:<br><br>
+        <ul>
+          <li>What for and while loops are</li>
+          <li>How to use the loops</li>
+        </ul>  
+      </div>
+      <div class="index-title">
+        On this page<hr>
+        <div class="index-contents">
+          <a href="#section-title-loops">What are loops?</a><br><br><a href="#section-title-while">While loops</a><br><br><a href="#section-title-for">For loops</a><br><br> 
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">
+        <h2 id="section-title-loops">What are loops?</h2>
+    </div>
+      <div class="section-contents">
+        <div class="section-summary">
+            Looping means repeating something until a particular condition is satisfied.
+          <br>
+        </div>
+        <div class="example-1">
+          <div class="example-2-title">
+            There are 2 types of loops
+          </div>
+          <br>
+          While Loops: <br><br>
+          <ul>
+            <li>While loops can execute a set of statements as long as a condition is true.</li><br>
+          </ul>
+          <div class="code-box">          
+            x =<span style="color: red"> 1</span><br>
+            <span style="color: rgb(0, 93, 164)">while</span> x < 11:<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: rgb(164, 101, 0)">x</span>)<br>
+            <span style="color: white;">. </span>x +=<span style="color: red"> 1</span><br>
+            <span style="color: green">#This will print all numbers from 1 to 10</span><br>
+            <span style="color: green">#If x += 1 wasn't there then the loop would never end, it would keep printing 1</span><br>            
+          </div>
+          <br>
+          For loops: <br><br>
+          <ul>
+            <li>For loops are used for iterating over a sequence.</li><br>
+          </ul>
+          <div class="code-box">          
+              dogs =<span style="color: rgb(164, 101, 0)"> ["Greyhounds", "Patterdales", "Pitbulls"]</span><br>
+              <span style="color: rgb(0, 93, 164)">for</span> x <span style="color: rgb(0, 93, 164)">in</span> dogs:<br>
+              <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(x)<br>
+              <span style="color: green">#This will print all the items in the variable "dogs"</span><br>
+          </div>
+          <br>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2 id="section-title-while">While loops</h2>
+    </div>
+      <div class="section-contents">
+        <div class="section-summary">
+            Here we will look at while loops in more depth
+          <br>
+        </div>
+        <div class="example-1">
+          <div class="example-2-title">
+            Break Statements
+          </div>
+          <br>
+          With the break statement we can stop the loop even if the while condition is true: <br><br>
+          <div class="code-box">          
+            x =<span style="color: red"> 1</span><br>
+            <span style="color: rgb(0, 93, 164)">while</span> x < 11:<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: rgb(164, 101, 0)">x</span>)<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">if</span>(x == 4)<br>
+            <span style="color: white;">.  . </span><span style="color: rgb(0, 93, 164)">break:</span><br>
+            <span style="color: white;">. </span>x +=<span style="color: red"> 1</span><br>
+            <span style="color: green">#This will only print numbers up to 4</span><br>
+            <span style="color: green">#The break statement ensures the loop ends at 4</span><br>            
+          </div>
+          <br>
+          <div class="example-2-title">
+            Continue Statements
+          </div><br>
+          Continue statements stop the current iteration, and continue with the next:<br><br>
+          <div class="code-box">          
+            x =<span style="color: red"> 3</span><br>
+            <span style="color: rgb(0, 93, 164)">while</span> x < 8:<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: rgb(164, 101, 0)">x</span>)<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">if</span>(x == 4)<br>
+            <span style="color: white;">.  . </span><span style="color: rgb(0, 93, 164)">continue:</span><br>
+            <span style="color: white;">. </span>x +=<span style="color: red"> 1</span><br>
+            <span style="color: green">#This will only print numbers from 3 to 8, but will skip 4</span><br>
+          </div>
+          <br>
+          <div class="example-2-title">
+            Else Statements
+          </div><br>
+          Else statements can be used to execute code when the condition is no longer true:<br><br>
+          <div class="code-box">          
+            x =<span style="color: red"> 1</span><br>
+            <span style="color: rgb(0, 93, 164)">while</span> x < 7:<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: rgb(164, 101, 0)">x</span>)<br>
+            <span style="color: white;">. </span>x +=<span style="color: red"> 1</span><br>
+            <span style="color: white;">.  . </span><span style="color: rgb(0, 93, 164)">else:</span><br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: green">"x is no longer less than 7"</span>)<br>
+            <span style="color: green">#This will only print numbers from 1 to 5, and then the "x is no longer..." line</span><br>
+          </div>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2 id="section-title-for">For loops</h2>
+    </div>
+      <div class="section-contents">
+        <div class="section-summary">
+            Here we will look at for loops in more depth
+          <br>
+        </div>
+        <div class="example-1">
+          <div class="example-2-title">
+            Break Statements
+          </div>
+          <br>
+          With the break statement we can stop the loop before it has looped through all the items: <br><br>
+          <div class="code-box">          
+            dogs =<span style="color: rgb(164, 101, 0)"> ["Greyhounds", "Patterdales", "Pitbulls"]</span><br>
+            <span style="color: rgb(0, 93, 164)">for</span> x <span style="color: rgb(0, 93, 164)">in</span> dogs:<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(x)<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">if</span>(x ==<span style="color: rgb(164, 101, 0);"> "Patterdales")</span>:<br>
+            <span style="color: white;">.  . </span><span style="color: rgb(0, 93, 164)">break</span><br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(x)<br>
+            <span style="color: green">#This will only print "Greyhounds" as the loop stops at "Patterdales"</span><br>        
+          </div>
+          <br>
+          <div class="example-2-title">
+            Continue Statements
+          </div>
+          <br>
+          With the continue statement we can stop the current iteration of the loop, and continue with the next:<br><br>
+          <div class="code-box">          
+            dogs =<span style="color: rgb(164, 101, 0)"> ["Greyhounds", "Patterdales", "Pitbulls"]</span><br>
+            <span style="color: rgb(0, 93, 164)">for</span> x <span style="color: rgb(0, 93, 164)">in</span> dogs:<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(x)<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">if</span>(x ==<span style="color: rgb(164, 101, 0);"> "Patterdales")</span>:<br>
+            <span style="color: white;">.  . </span><span style="color: rgb(0, 93, 164)">continue</span><br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(x)<br>
+            <span style="color: green">#This will only print "Greyhounds" and "Pitbulls" as the loop skips "Patterdales"</span><br>        
+          </div>
+          <br>
+          <div class="example-2-title">
+            Range Functions
+          </div>
+          <br>
+          To loop through a set of code a specified number of times, we can use range().<br><br>
+          <div class="code-box">          
+            <span style="color: rgb(0, 93, 164)">for</span> x <span style="color: rgb(0, 93, 164)">in range</span>(5)<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(x)<br>
+            <span style="color: green">#This will print numbers starting from 0 up to 4</span><br>    
+            <span style="color: green">#We always start from 0</span><br>            
+          </div>
+          <br>
+          We can use the start parameter to choose a number to start from, and we can include a parameter to determine how much the loop goes up by for each number.<br><br>
+          <div class="code-box">          
+            <span style="color: rgb(0, 93, 164)">for</span> x <span style="color: rgb(0, 93, 164)">in range</span>(2, 7)<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(x)<br>
+            <span style="color: green">#This will print numbers starting from 2 up to 6</span><br><br>
+            <span style="color: rgb(0, 93, 164)">for</span> x <span style="color: rgb(0, 93, 164)">in range</span>(2, 11, 2)<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(x)<br>
+            <span style="color: green">#This will print 2, 4, 6, 8, 10 as it is incrementing by 2</span><br><br>
+          </div>
+          <br>
+          <div class="example-2-title">
+            Else Statements
+          </div>
+          <br>
+          Else in a for loop specifies a block of code that will be executed when the loop is finished:<br><br>
+        <div class="code-box">
+            <span style="color: rgb(0, 93, 164)">for</span> x <span style="color: rgb(0, 93, 164)">in range</span>(2, 7)<br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(x)<br>
+            <span style="color: rgb(0, 93, 164)">else:</span><br>
+            <span style="color: white;">. </span><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: green;">"Loop has finished."</span>)<br>
+            <span style="color: green">#This will print 2 to 6 and then the "Loop has finished" line</span><br><br>
+        </div>
+      </div>
+      </div>
+</body>
+</html>
