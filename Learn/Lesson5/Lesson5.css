@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #000000;
+    color: white;
+  }
+  
+  ul{
+    margin-left: 20px;
+  }
+  
+  .welcome{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 35px;
+  }
+  
+  p{
+    font-size: 30px;
+  }
+  
+  .position{
+    position: relative;
+    height: 350px;
+  }
+  
+  .index-title {
+    position: absolute;
+    top: 0px;
+    right:50px;
+    width: 350px;
+    border: 8px solid #554deb;
+    background-color: rgb(27, 26, 26);
+    padding: 10px;
+    font-size: 30px;
+    box-shadow:
+    0 0 13px 8px #f0f,
+    0 0 19px 12px #0ff;
+  }
+  
+  .index-contents{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .objective-title{
+    position: absolute;
+    left: 50px;
+    font-size: 40px;
+    text-decoration-line: underline;
+    text-decoration-style: none;
+    text-decoration-color: #c012cc;
+  }
+  
+  .lesson-objective{
+    position: absolute;
+    left: 50px;
+    top: 75px;
+    width: 600px;
+    border: 10px solid #554deb;
+    background-color: #181616;
+    padding: 10px;
+    font-size: 30px;
+  }
+  
+  .section-title {
+    position: relative;
+    margin-left: 30px;
+    font-size: 40px;
+    text-decoration-line: underline;
+    text-decoration-style: none;
+    text-decoration-color: #c012cc;
+    color:#c012cc;
+  }
+  
+  .section-title-2 {
+    position: relative;
+    width: 50%;
+    font-size: 40px;
+    left: 30px;
+    text-decoration-line: underline;
+    text-decoration-style: none;
+    text-decoration-color: #c012cc;
+    color:#c012cc;
+  }
+  
+  .section-title-3 {
+    position: relative;
+    font-size: 40px;
+    text-decoration-line: underline;
+    text-decoration-style: none;
+    text-decoration-color: #c012cc;
+    color:#c012cc;
+    left: 30px;
+    width: 90%;
+  }
+  
+  .section-summary{
+    background-color: rgb(22, 21, 21);
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 15px solid rgb(119, 105, 105); 
+    font-weight: 700;
+    font-size: 25px;
+    width: 70%;
+  }
+  
+  .section-contents{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 75px;
+    margin-left: 30px;
+    font-size: 25px;
+    width: 95%;
+  }
+  
+  .section-contents-3{
+    position: relative;
+    margin-top: 10px;
+    font-size: 25px;
+    margin-left: 30px;
+    width: 70%;
+  }
+  
+  .example-1{
+    background-color: #181616;
+    border: 15px solid #df08c2; 
+    border-image: linear-gradient(#45f3ff 25%,#df08c2 75%) 2;
+    padding: 20px;
+    color: white;
+  }
+  
+  .example-1-title{
+    text-decoration-line: underline;
+    text-decoration-style: none;
+    text-decoration-color: white;
+    font-weight: bold;
+  }
+  
+  .example-2{
+    background-color: #181616;
+    border: 15px solid; 
+    border-image: linear-gradient(#df08c2 25%,#45f3ff 75%) 2;
+    padding: 20px;
+    color: white;
+    margin-bottom: 20px;
+  
+  }
+  
+  .example-2-title{
+    text-decoration-line: underline;
+    text-decoration-style: none;
+    text-decoration-color: white;
+    font-weight: bold;
+  }
+  
+  .example-3{
+    background-color: #181616;
+    border: 15px solid; 
+    border-image: linear-gradient(#45f3ff 25%,#df08c2 75%) 2;
+    padding: 20px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .example-3-title{
+    text-decoration-line: underline;
+    text-decoration-style: none;
+    text-decoration-color: white;
+    font-weight: bold;
+  }
+  
+  .code-box{
+    background-color: white;
+    border-left: 10px solid green;
+    padding: 3px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  
+  .code-box-comment{
+    background-color: white;
+    border-left: 10px solid green;
+    padding: 3px;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  
+  .code-box-cmd-1{
+    background-color: black;
+    border-left: 10px solid green;
+    padding: 3px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  
+  .code-box-cmd-2{
+    background-color: rgb(28, 26, 26);
+    border-left: 10px solid green;
+    padding: 3px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  
+  span{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 25px;
+  }

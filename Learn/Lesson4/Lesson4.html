@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4</title>
+    <link rel="stylesheet" type="text/css" href="Lesson4.css">
+    <link rel="stylesheet" type="text/css" href="../../Nav/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="../../Landing/index.html" class="logo">LPD Python</a>
+    <div class="navbar-left">
+      <a href="../../Learn/Learn.html">Learn</a>
+      <a href="../../Practice/Practice.html">Practice</a>
+      <a href="../../Quizzes/Quizzes.html">Quizzes</a>
+      <a href="../../Games/Games.html">Games</a>
+    </div>
+    <div class="navbar-right">
+        <a href="../../About/About.html">About</a>
+    </div> 
+</div>
+
+    <div class="welcome">
+      Lesson 4 - Operators<br><br> 
+    </div>
+    <div class="position">
+      <div class="objective-title"> 
+        Lesson Objective
+      </div>
+      <div class="lesson-objective">
+        In this lesson you will learn:<br><br>
+        <ul>
+          <li>What operators are</li>
+          <li>How to use operators</li>
+        </ul>  
+      </div>
+      <div class="index-title">
+        On this page<hr>
+        <div class="index-contents">
+          <a href="#section-title-operators">What are operators?</a><br><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">
+        <h2 id="section-title-operators">What are operators?</h2>
+    </div>
+    <div class="section-contents">
+        <div class="section-summary">
+            Operators are used to perform operations on variables and values.
+            <br>
+        </div>
+        <div class="example-1">
+            <div class="example-1-title">
+                Basic Operators
+            </div>
+            <br>
+            1. Arithmetic Operators:<br><br>
+            <ul>
+                <li>We can perform all the standard operations like addition, subtraction, and more.</li>
+            </ul>
+            <br>
+            <div class="code-box">
+                <span style="color: rgb(0, 93, 164)">print</span>(<span style="color: red">5 + 7</span>)<br>
+                <span style="color: green">#This will print 12</span><br><br>
+                <span style="color: rgb(0, 93, 164)">print</span>(<span style="color: red">6 - 10</span>)<br>
+                <span style="color: green">#This will print -4</span><br><br>
+                <span style="color: rgb(0, 93, 164)">print</span>(<span style="color: red">4 * 3</span>)<br>
+                <span style="color: green">#This is for multiplication and thus prints 12</span><br><br>
+                <span style="color: rgb(0, 93, 164)">print</span>(<span style="color: red">10 / 5</span>)<br>
+                <span style="color: green">#This is for division and thus prints 2</span><br><br>
+            </div><br>
+            2. Comparison Operators:<br><br>
+            Comparison operators are used to compare two values.<br><br>
+            <ul>            
+                <li>We can compare two values using '=='</li><br>
+            </ul>
+            <div class="code-box">          
+                x =<span style="color: red"> 5</span><br>
+                y =<span style="color: red"> 3</span><br>
+                <span style="color: rgb(0, 93, 164)">print</span>(<span style="color: red">x == y</span>)<br>
+                <span style="color: green">#This will print 'False' because 5 doesn't equal 3</span><br>
+            </div><br>
+            <ul>            
+                <li>We can use '!=' to say something is not equal to something else</li><br>
+            </ul>
+            <div class="code-box">          
+                x =<span style="color: red"> 12</span><br>
+                y =<span style="color: red"> 7</span><br>
+                <span style="color: rgb(0, 93, 164)">print</span>(<span style="color: red">x != y</span>)<br>
+                <span style="color: green">#This will print 'True' because 12 doesn't equal 7</span><br>
+            </div><br>
+            <ul>            
+                <li>We have '>' and '<' which are used to check if something is bigger or less than something else.</li><br>
+            </ul>
+            <div class="code-box">
+                <span style="color: green">#First we will look at 'greater than'</span><br>          
+                x =<span style="color: red"> 10</span><br>
+                y =<span style="color: red"> 2</span><br>
+                <span style="color: rgb(0, 93, 164)">print</span>(<span style="color: red">x > y</span>)<br>
+                <span style="color: green">#This will print 'True' because 10 is larger than 2</span><br><br>
+                <span style="color: green">#Now we will look at 'less than'</span><br>          
+                <span style="color: rgb(0, 93, 164)">print</span>(<span style="color: red">x < y</span>)<br>
+                <span style="color: green">#This will print 'False' because 10 is larger than 2</span><br><br>
+            </div><br><br>
+            <ul>
+                <li>Lastly, we have '>=' and '<=' which are used to check if something is bigger, less, or equal to something else.</li><br>
+            </ul>
+            <div class="code-box">
+                <span style="color: green">#First we will look at 'greater than or equal to'</span><br>    
+                x =<span style="color: red"> 10</span><br>
+                y =<span style="color: red"> 2</span><br>
+                z =<span style="color: red"> 10</span><br>
+                <span style="color: rgb(0, 93, 164)">print</span>(<span style="color: red">x >= y</span>)<br>
+                <span style="color: green">#This will print 'True' because 10 is larger than 2</span><br><br>
+                <span style="color: rgb(0, 93, 164)">print</span>(<span style="color: red">x >= z</span>)<br>
+                <span style="color: green">#This will print 'True' because 10 is equal to 10</span><br><br>
+                <span style="color: green">#Now we will look at 'less than or equal to'</span><br>
+                <span style="color: rgb(0, 93, 164)">print</span>(<span style="color: red">x <= y</span>)<br>
+                <span style="color: green">#This will print 'False' because 10 is not less than, or equal to 2</span><br><br>
+                <span style="color: rgb(0, 93, 164)">print</span>(<span style="color: red">x <= z</span>)<br>
+                <span style="color: green">#This will print 'True' because 10 is equal to 10</span><br><br>    
+            </div><br>
+            3. Logical Operators<br><br>
+            <ul>            
+              <li>Logical operators are used to combine conditional statements</li><br>
+          </ul>
+          <div class="code-box">
+            <span style="color: green">#First we will look at 'and' where both statements must be correct to print 'True'</span><br>    
+            x =<span style="color: red"> 7</span><br>
+            <span style="color: rgb(0, 93, 164)">print</span>((<span style="color: red">x > 3</span>) <span style="color: rgb(0, 93, 164)">and</span> (<span style="color: red">x < 12</span>))<br>
+            <span style="color: green">#This will print 'True' because 7 is larger than 3 and smaller than 12</span><br><br>
+            <span style="color: green">#Now we will look at 'or' where only 1 statement must be correct to print 'True'</span><br>    
+            y =<span style="color: red"> 3</span><br>
+            <span style="color: rgb(0, 93, 164)">print</span>((<span style="color: red">y >= 3</span>) <span style="color: rgb(0, 93, 164)">or</span> (<span style="color: red">y > 5</span>))<br>
+            <span style="color: green">#This will print 'True' because the first statement is satisfied in 3 equalling to 3</span><br><br>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

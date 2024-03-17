@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3</title>
+    <link rel="stylesheet" type="text/css" href="Lesson3.css">
+    <link rel="stylesheet" type="text/css" href="../../Nav/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="../../Landing/index.html" class="logo">LPD Python</a>
+    <div class="navbar-left">
+      <a href="../../Learn/Learn.html">Learn</a>
+      <a href="../../Practice/Practice.html">Practice</a>
+      <a href="../../Quizzes/Quizzes.html">Quizzes</a>
+      <a href="../../Games/Games.html">Games</a>
+    </div>
+    <div class="navbar-right">
+        <a href="../../About/About.html">About</a>
+    </div> 
+</div>
+
+    <div class="welcome">
+      Lesson 3 - Data Types<br><br> 
+    </div>
+    <div class="position">
+      <div class="objective-title"> 
+        Lesson Objective
+      </div>
+      <div class="lesson-objective">
+        In this lesson you will learn:<br><br>
+        <ul>
+          <li>About the data types of Python</li>
+          <li>How to use numbers</li>
+          <li>How to use casting</li>
+        </ul>  
+      </div>
+      <div class="index-title">
+        On this page<hr>
+        <div class="index-contents">
+          <a href="#section-title-data-type">What are the data types?</a><br><br><a href="#section-title-check">How to check a data type</a><br><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">
+      <h2 id="section-title-data-type">What are the data types?</h2>
+    </div>
+    <div class="section-contents">
+      <div class="section-summary">
+        Data types define the data that a variable will contain and actions it can perform.<br>
+      </div>
+      <div class="example-1">
+        <div class="example-2-title">
+          What are the data types? 
+        </div>
+        <br>
+        So far we have seen Text types:<br><br>
+        1. String - Used to represent text rather than just numbers. <br><br>
+        <div class="code-box">          
+          x = <span style="color: green">"Hello World!"</span><br>
+          userName = <span style="color: green">"Number 1 Rick"</span><br>
+        </div>
+        <br>
+        We have also seen Numeric Types:<br><br>
+        1. Integer - A whole number that can be stored in a variable. <br><br>
+        <div class="code-box">          
+          x = <span style="color: rgb(164, 101, 0)">3</span><br>
+          y = <span style="color: rgb(164, 101, 0)">15</span><br>
+        </div>
+        <br>
+        2. Float - A decimal number. It will always end in a decimal. <br><br>
+        <div class="code-box">          
+          x = <span style="color: rgb(164, 101, 0)">3.0</span><br>
+          y = <span style="color: rgb(164, 101, 0)">15.3</span><br>
+        </div>
+        <br>
+        And lastly, Bool Types:<br><br>
+        4. Boolean - Allows you determine whether something is true or false. <br><br>
+        <div class="code-box">          
+          x = <span style="color: rgb(0, 93, 164)">3</span><br>
+          <span style="color: rgb(0, 93, 164)">print</span>(x > 2) <span style="color: green">#Prints True</span><br>
+          <span style="color: rgb(0, 93, 164)">print</span>(x == 3)<span style="color: green">#Prints True</span><br>
+          <span style="color: rgb(0, 93, 164)">print</span>(x < 2)<span style="color: green">#Prints False</span><br>
+        </div>
+        <br>
+      </div>
+      <br>
+      <div class="section-summary">
+        Now we will look at sequences, maps, and sets.
+      </div>
+      <div class="example-3">
+        <div class="example-3-title">Sequence Types</div><br>
+        It is a type that stores multiple items at a time. Types are lists, tuples, and range.<br><br>
+        <div class="code-box">
+          myList = <span style="color: rgb(164, 101, 0)">['Item1', 'Item2', 'Item3']</span>
+        </div>
+        <br>
+        Sequence Types include lists, tuples, strings, and ranges.
+      </div>
+      <div class="example-3">
+        <div class="example-3-title">Mapping Types</div><br>
+        It is a dictionary that has a key, and a value, then maps them together so they're related.<br><br>
+        <div class="code-box">
+          personalInfo = {<span style="color: green">"name" : "Bob", "age" : 28</span>}
+        </div>
+        <br>
+        A dictionary is a collection which is unordered (depending on your version of Python), changeable and indexed, so you can access specific parts of it and change it where necessary.
+      </div>
+      <div class="example-3">
+        <div class="example-3-title">Set Types</div><br>
+        Sets are used to store multiple items in a single variable and are used with curly brackets {}.<br><br>
+        <div class="code-box">
+          x = {<span style="color: rgb(164, 101, 0)">"Apple", "Carrot", "Potato"</span>}
+        </div>
+        <br>
+        A set is a collection which is unordered, unchangeable, and unindexed. We can add and remove items if we wish.
+      </div>
+    </div>
+
+    <div class="section-title-2">
+      <h2 id="section-title-check">How to check the data type</h2>
+    </div>
+    <div class="section-contents">
+      <div class="section-summary">
+        You can get the data type of any object by using the type() function
+      </div>
+      <div class="example-2">
+        <div class="example-2-title">
+          Checking common data types
+        </div><br>
+        Int:<br><br>
+        <div class="code-box">
+          x = <span style="color: red">3</span><br>
+          <span style="color: rgb(0, 93, 164)">print</span>(type(x))<br>
+          <span style="color: green">#This prints '< class 'int' >'</span><br>
+        </div>
+        <br>
+        Float:<br><br>
+        <div class="code-box">
+          x = <span style="color: red">3.0</span><br>
+          <span style="color: rgb(0, 93, 164)">print</span>(type(x))<br>
+          <span style="color: green">#This prints '< class 'float' >'</span><br>
+        </div>
+        <br>
+        String:<br><br>
+        <div class="code-box">
+          x = (<span style="color: green">"Hello World"</span>)<br>
+          <span style="color: rgb(0, 93, 164)">print</span>(type(x))<br>
+          <span style="color: green">#This prints '< class 'str' >'</span><br>
+        </div>
+        <br>
+        List:<br><br>
+        <div class="code-box">
+          x = [<span style="color: rgb(164, 101, 0)">"Green", "Purple", "Blue"</span>]<br>
+          <span style="color: rgb(0, 93, 164)">print</span>(type(x))<br>
+          <span style="color: green">#This prints '< class 'list' >'</span><br>
+        </div>
+        <br>
+        Tuple:<br><br>
+        <div class="code-box">
+          x = (<span style="color: green">"Cat", "Dog", "Turtle"</span>)<br>
+          <span style="color: rgb(0, 93, 164)">print</span>(type(x))<br>
+          <span style="color: green">#This prints '< class 'tuple' >'</span><br>
+        </div>
+        <br>
+        Dict:<br><br>
+        <div class="code-box">
+          x = {<span style="color: green">"name" : "Bob", "age" : 28</span>}<br>
+          <span style="color: rgb(0, 93, 164)">print</span>(type(x))<br>
+          <span style="color: green">#This prints '< class 'dict' >'</span><br>
+        </div>
+        <br>
+        Bool:<br><br>
+        <div class="code-box">
+          x = <span style="color: rgb(0, 93, 164)">True</span><br>
+          <span style="color: rgb(0, 93, 164)">print</span>(type(x))<br>
+          <span style="color: green">#This prints '< class 'bool' >'</span><br>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

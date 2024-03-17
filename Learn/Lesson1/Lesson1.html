@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1</title>
+    <link rel="stylesheet" type="text/css" href="Lesson1.css">
+    <link rel="stylesheet" type="text/css" href="../../Nav/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="../../Landing/index.html" class="logo">LPD Python</a>
+    <div class="navbar-left">
+      <a href="../../Learn/Learn.html">Learn</a>
+      <a href="../../Practice/Practice.html">Practice</a>
+      <a href="../../Quizzes/Quizzes.html">Quizzes</a>
+      <a href="../../Games/Games.html">Games</a>
+    </div>
+    <div class="navbar-right">
+        <a href="../../About/About.html">About</a>
+    </div> 
+</div>
+
+    <div class="welcome">
+      Lesson 1 - Executing, Printing, and Commenting<br><br> 
+    </div>
+    <div class="position">
+      <div class="objective-title"> 
+        Lesson Objective
+      </div>
+      <div class="lesson-objective">
+        In this lesson you will learn how to:<br><br>
+        <ul>
+          <li>Execute a program</li>
+          <li>Display the contents of your code</li>
+          <li>Comment throughout your code</li>
+        </ul>  
+      </div>
+      <div class="index-title">
+        On this page<hr>
+        <div class="index-contents">
+          <a href="#section-title-execute">How to make a Python program</a><br><br><a href="#section-title-print">What is "print"?</a><br><br><a href="#section-title-comments">Python Comments</a><br><br> 
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">
+      <h2 id="section-title-execute">How to make a Python program</h2>
+    </div>
+    <div class="section-contents">
+      <div class="section-summary">
+        Here are 3 common ways to create and run a Python program<br>
+      </div>
+      <div class="example-1">
+        1. We can write our Python code in the cmd. <br><br>
+        <div class="code-box-cmd-1">
+          >>> print("Hello World!")<br>
+          Hello World!
+        </div><br>
+        2. We can create a python file somewhere, using the .py file extension, and run it in the Command Line by typing in python followed by the name of the file.py.<br><br>
+        <div class="code-box-cmd-2">
+          C:\Users\Tyler>python hello.py<br>
+          Hello World!
+        </div><br>
+        3. We can download an IDE and execute our code there. <br><br>
+        <div class="code-box">          
+          <span style="color: rgb(0, 93, 164)">print</span>(<span style="color: green">"Hello World!"</span>)<br>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title-2">
+      <h2 id="section-title-print">What does print do?</h2>
+    </div>
+    <div class="section-contents">
+      <div class="section-summary">
+        The print() function will print a specific message, messages, or another standard output device. You can print anything as long as it works!<br><br>
+      </div>
+      <div class="example-2">
+        <div class="example-2-title">
+          Printing 1 Object:
+        </div><br>
+        print(" ") means if there is a word, or multiple words in between the same set of speech marks then they will count as one object.<br><br>
+        <div class="code-box">
+          <span style="color: rgb(0, 93, 164)">print</span>(<span style="color: green">"Hello World!"</span>)<br>
+        </div>
+      </div>
+      <div class="example-2">
+        <div class="example-2-title">
+          Printing 2 Objects:
+        </div><br> 
+        We can also use print(" ", " ") as this signifies two separate objects that will be printed.<br><br>
+        <div class="code-box">
+          <span style="color: rgb(0, 93, 164)">print</span>(<span style="color: green">"Hello World!", "How are you?"</span>)<br>
+        </div>
+      </div>
+      <div class="example-2">
+        <div class="example-2-title">
+          Printing Multiple Objects:
+        </div><br>
+        You're able to use print(" ", " ", " ") as many times as you want.<br><br>
+        <div class="code-box">
+          <span style="color: rgb(0, 93, 164)">print</span>(<span style="color: green">"Hello!", "How are you?", "This print function has 3 objects now."</span>)<br>
+        </div><br>
+      </div>
+        <div class="example-2">
+          <div class="example-2-title">
+            Using Multiple Print Functions:
+          </div><br>
+          You're able to use print(" ") as many times as you want.<br><br>
+          <div class="code-box">
+            <span style="color: rgb(0, 93, 164)">print</span>(<span style="color: green">"Hello!"</span>)<br>
+            <span style="color: rgb(0, 93, 164)">print</span>(<span style="color: green">"I like to learn!"</span>)<br>
+            <span style="color: rgb(0, 93, 164)">print</span>(<span style="color: green">"Python is fun!"</span>)<br>
+          </div><br>
+        </div>
+        <div class="example-2">
+          <div class="example-2-title">
+            Printing Other Variables:
+          </div><br>
+          We will go into variables later on, but this shows that print can be used for other things too.<br><br>
+          <div class="code-box">
+            x
+            <span style="color: red">=</span> 
+            <span style="color: rgb(164, 101, 0)">5</span><br>
+            <span style="color: rgb(0, 93, 164)">print</span>(x)<br>
+            y 
+            <span style="color: red">=</span> 
+            (<span style="color: green">"Red", "Yellow", "Green"</span>)<br>
+            <span style="color: rgb(0, 93, 164)">print</span>(y)
+          </div>
+        </div>
+    </div>
+
+    <div class="section-title-3">
+      <h2 id="section-title-comments">What are comments and how do we use them?</h2>
+    </div>
+    <div class="section-contents">
+      <div class="section-summary">
+        Comments allow us to write things that the program will ignore.<br><br>
+      </div>
+      <div class="example-3">
+        <div class="example-3-title">What is the point of a comment?</div><br>
+        Comments can be used to:<br><br>
+        <ul>
+          <li>Explain code</li>
+          <li>Make the code easier to read and understand</li>
+          <li>Prevent certain code being executed</li>
+        </ul>  
+      </div>
+      <div class="example-3">
+        <div class="example-3-title">How to make a comment:</div>
+        <br>Single line comments are used simply by typing '#'.<br><br>
+        <div class="code-box-comment"># This is a comment<br> #So is this</div><br>
+        We can also make comments that span multiple lines using this:<br><br>
+        <div class="code-box">
+          <span style="color: rgb(164, 101, 0)">'''<br>
+            Now this comment<br>
+            Is multiple lines<br>
+            Instead of just one<br>
+            '''</span>
+        </div>
+      </div>
+      <div class="example-3">
+        <div class="example-3-title">Comments are always ignored:</div>
+        <br>The program will never acknowledge comments.<br><br>
+        <div class="code-box">
+          <span style="color: green">#Hello</span><br>
+          <span style="color: rgb(0, 93, 164)">print</span>(<span style="color: rgb(164, 101, 0)">"Hello World!"</span>)
+        </div><br>
+        No matter where they are:<br><br>
+        <div class="code-box"><span style="color: rgb(0, 93, 164)">print</span>(<span style="color: rgb(164, 101, 0)">"Hello World!"</span>)<span style="color: green">#Hello</span></div>
+      </div>
+      <div class="example-3">
+        <div class="example-3-title">Comments can also be used to stop code from being executed:</div>
+        <br>We can stop something from being executed in the program by commenting it out.<br><br>
+        <div class="code-box-comment">
+          #print("Hey there!")
+        </div>
+        <div class="code-box">
+          <span style="color: rgb(0, 93, 164)">print</span>(<span style="color: rgb(164, 101, 0)">"Hello World"</span>)
+        </div>
+      </div>
+    </div>
+</body>
+</html>
