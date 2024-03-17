@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background-color: rgb(202, 199, 199);
+    color: black;
+}
+
+h1{
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.container{
+    padding: 50px;
+}
+
+a, a:hover, a:focus, a:active, a:visited, a:link {
+    text-decoration: none;
+}
+
+.refreshButton {
+    background-color: #1E1985; 
+    border: none;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    cursor: crosshair;
+    border-radius: 8px;
+    margin-left: 50px;
+    margin-top: 3px;
+    transition-duration: 0.4s;
+}
+
+.refreshButton:hover {
+    color: black;
+    transition: 0.7s ease-in-out transform, 0.7s ease-in-out;
+    background-color: #554deb;
+
+}
